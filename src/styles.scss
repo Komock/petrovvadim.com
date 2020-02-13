@@ -1,0 +1,30 @@
+$color-active: #33C4D0;
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    color: #fff;
+    background: #3c3d44;
+}
+
+a {
+    color: $color-active;
+    transition: 0.3s all;
+    &:hover {
+        color: lighten($color-active, 20%);
+    }
+}
+
+pv-root {
+    display: block;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}

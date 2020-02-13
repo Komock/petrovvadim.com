@@ -1,4 +1,9 @@
 <div class="wrap">
+    <nav *ngIf="navLinks$ | async as navLinks">
+        <ul>
+            <li *ngFor="let link of navLinks">{{ link.route }}</li>
+        </ul>
+    </nav>
     <div class="main-text">
         <h1 class="main-text__title">Hi, I'm Vadim Petrov — a frontend developer and web-designer from Moscow</h1>
         <p class="main-text__description">

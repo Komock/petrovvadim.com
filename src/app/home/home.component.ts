@@ -9,7 +9,7 @@ import { ScullyRoutesService } from '@scullyio/ng-lib';
 })
 export class HomeComponent implements OnInit {
 
-  links$: Observable<any> = this.scully.available$;
+  navLinks$: Observable<any> = this.scully.available$;
 
   socialLinks = [{
     icon: '🤓',
@@ -29,8 +29,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     // debug current pages
-    this.links$.subscribe(links => {
-      console.log(links);
+    this.navLinks$.subscribe(links => {
+      console.log('links: ', links);
     });
   }
 

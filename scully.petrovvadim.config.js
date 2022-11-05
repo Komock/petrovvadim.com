@@ -1,7 +1,7 @@
 exports.config = {
   projectRoot: "./src",
   projectName: "petrovvadim",
-  outDir: './dist/static',
+  outDir: './docs',
   routes: {
   }
 };

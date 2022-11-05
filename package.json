@@ -9,9 +9,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "scully": "scully",
-    "scully:build": "npm run clear; npm run scully",
+    "scully:build": "npm run scully",
     "scully:serve": "scully serve",
-    "clear": "rimraf ./dist/static"
+    "scully:postbuild": "node scully-postbuild.js",
+    "clear": "rimraf ./dist ./docs",
+    "build:site": "npm run clear; npm run build; npm run scully; npm run scully:postbuild"
   },
   "private": true,
   "dependencies": {
